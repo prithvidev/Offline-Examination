@@ -7,6 +7,7 @@ package offline.examination;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import javax.swing.JOptionPane;
 
 public class lang_selection extends javax.swing.JFrame {
 
@@ -56,6 +57,9 @@ public class lang_selection extends javax.swing.JFrame {
         r3 = new javax.swing.JRadioButton();
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         jLabel2.setText("jLabel2");
@@ -108,7 +112,7 @@ public class lang_selection extends javax.swing.JFrame {
                 r2ActionPerformed(evt);
             }
         });
-        jPanel1.add(r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 159, 96, 45));
+        jPanel1.add(r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 159, 60, 45));
 
         r3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         r3.setText("Python");
@@ -118,7 +122,7 @@ public class lang_selection extends javax.swing.JFrame {
                 r3ActionPerformed(evt);
             }
         });
-        jPanel1.add(r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 209, 96, 45));
+        jPanel1.add(r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 209, -1, 45));
 
         jButton3.setBackground(new java.awt.Color(0, 204, 204));
         jButton3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -133,7 +137,18 @@ public class lang_selection extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("OFFLINE EXAMINATION");
+        jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 11, 269, 50));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/java.png"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, -1, 30));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/c++.png"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, -1, 30));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/python.png"))); // NOI18N
+        jLabel6.setRequestFocusEnabled(false);
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, -1, 30));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/16.jpg"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 270));
@@ -194,7 +209,7 @@ public class lang_selection extends javax.swing.JFrame {
         {
             String s1=r1.getText();
             try
-            {   details obj=new details(s1);
+            {   registration obj=new registration(s1);
                 this.setVisible(false);
                 obj.setVisible(true);
             }
@@ -206,7 +221,7 @@ public class lang_selection extends javax.swing.JFrame {
             String s2=r2.getText();
             try
             {
-                details obj2=new details(s2);
+                registration obj2=new registration(s2);
                 this.setVisible(false);
                 obj2.setVisible(true);
             }
@@ -217,7 +232,7 @@ public class lang_selection extends javax.swing.JFrame {
         {
             String s3=r3.getText();
             try{
-                details obj3=new details(s3);
+                registration obj3=new registration(s3);
                 this.setVisible(false);
                 obj3.setVisible(true);
             }
@@ -231,6 +246,8 @@ public class lang_selection extends javax.swing.JFrame {
 
             }
             catch(Exception e){}
+        
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
@@ -276,6 +293,9 @@ public class lang_selection extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton minimize;
     private javax.swing.JRadioButton r1;
