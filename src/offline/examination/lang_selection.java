@@ -150,7 +150,7 @@ public class lang_selection extends javax.swing.JFrame {
         jLabel6.setRequestFocusEnabled(false);
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, -1, 30));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/16.jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/14.jpg"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 270));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

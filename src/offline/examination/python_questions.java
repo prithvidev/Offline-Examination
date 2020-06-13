@@ -65,12 +65,16 @@ public class python_questions extends javax.swing.JFrame {
         r12 = new javax.swing.JRadioButton();
         jButton5 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/icons8-python-96.png"))); // NOI18N
         jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 11, 100, 88));
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/Go back.png"))); // NOI18N
         jButton4.setContentAreaFilled(false);
@@ -79,14 +83,17 @@ public class python_questions extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 30, 30));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("HOME");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 30, -1));
 
         ttt.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         ttt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ttt.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(ttt, new org.netbeans.lib.awtextra.AbsoluteConstraints(205, 11, 556, 88));
 
         minimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/minimize.png"))); // NOI18N
         minimize.setContentAreaFilled(false);
@@ -95,6 +102,7 @@ public class python_questions extends javax.swing.JFrame {
                 minimizeActionPerformed(evt);
             }
         });
+        jPanel1.add(minimize, new org.netbeans.lib.awtextra.AbsoluteConstraints(776, 0, 27, -1));
 
         CANCEL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/exit.png"))); // NOI18N
         CANCEL.setContentAreaFilled(false);
@@ -103,9 +111,11 @@ public class python_questions extends javax.swing.JFrame {
                 CANCELActionPerformed(evt);
             }
         });
+        jPanel1.add(CANCEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 0, 27, -1));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel6.setText("Q 1) Suppose we have a set a = {10,9,8,7}, and we execute a.remove(14) what will happen ?");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 147, 709, 25));
 
         r1.setText("We cannot remove an element");
         r1.setContentAreaFilled(false);
@@ -114,6 +124,7 @@ public class python_questions extends javax.swing.JFrame {
                 r1ActionPerformed(evt);
             }
         });
+        jPanel1.add(r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 179, -1, -1));
 
         r2.setText("Method is executed but no exception is raised ");
         r2.setContentAreaFilled(false);
@@ -122,6 +133,7 @@ public class python_questions extends javax.swing.JFrame {
                 r2ActionPerformed(evt);
             }
         });
+        jPanel1.add(r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 179, -1, -1));
 
         r3.setText("Key error is raised");
         r3.setContentAreaFilled(false);
@@ -130,6 +142,7 @@ public class python_questions extends javax.swing.JFrame {
                 r3ActionPerformed(evt);
             }
         });
+        jPanel1.add(r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(468, 179, -1, -1));
 
         r4.setText("There doesn't exist such method remove");
         r4.setContentAreaFilled(false);
@@ -138,9 +151,11 @@ public class python_questions extends javax.swing.JFrame {
                 r4ActionPerformed(evt);
             }
         });
+        jPanel1.add(r4, new org.netbeans.lib.awtextra.AbsoluteConstraints(599, 179, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel7.setText("Q 2) Pylab is a package that combine _______,________&______ into a single namespace");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 709, 25));
 
         r5.setText("Numpy, scipy & matplotlib");
         r5.setContentAreaFilled(false);
@@ -149,6 +164,7 @@ public class python_questions extends javax.swing.JFrame {
                 r5ActionPerformed(evt);
             }
         });
+        jPanel1.add(r5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 252, -1, -1));
 
         r6.setText("Numpy, matplotlib & pandas");
         r6.setContentAreaFilled(false);
@@ -157,6 +173,7 @@ public class python_questions extends javax.swing.JFrame {
                 r6ActionPerformed(evt);
             }
         });
+        jPanel1.add(r6, new org.netbeans.lib.awtextra.AbsoluteConstraints(177, 252, -1, -1));
 
         r7.setText("Numpy, pandas & matplotlib");
         r7.setContentAreaFilled(false);
@@ -165,6 +182,7 @@ public class python_questions extends javax.swing.JFrame {
                 r7ActionPerformed(evt);
             }
         });
+        jPanel1.add(r7, new org.netbeans.lib.awtextra.AbsoluteConstraints(362, 252, -1, -1));
 
         r8.setText("Numpy, scipy  & pandas");
         r8.setContentAreaFilled(false);
@@ -173,9 +191,11 @@ public class python_questions extends javax.swing.JFrame {
                 r8ActionPerformed(evt);
             }
         });
+        jPanel1.add(r8, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 252, 154, -1));
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel8.setText("Q 3) Select the correct function among them which can be used to write the data to perform for a binary output?");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 293, 709, 25));
 
         r9.setText("Write");
         r9.setContentAreaFilled(false);
@@ -184,9 +204,11 @@ public class python_questions extends javax.swing.JFrame {
                 r9ActionPerformed(evt);
             }
         });
+        jPanel1.add(r9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 325, 78, -1));
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel9.setText("Q 4) Which is the special symbol used in python to add comments?");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 366, 709, 25));
 
         r13.setText("$");
         r13.setContentAreaFilled(false);
@@ -195,6 +217,7 @@ public class python_questions extends javax.swing.JFrame {
                 r13ActionPerformed(evt);
             }
         });
+        jPanel1.add(r13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 398, 74, -1));
 
         r17.setText("a new line and hello");
         r17.setContentAreaFilled(false);
@@ -203,6 +226,7 @@ public class python_questions extends javax.swing.JFrame {
                 r17ActionPerformed(evt);
             }
         });
+        jPanel1.add(r17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 471, -1, -1));
 
         r14.setText("//");
         r14.setContentAreaFilled(false);
@@ -211,6 +235,7 @@ public class python_questions extends javax.swing.JFrame {
                 r14ActionPerformed(evt);
             }
         });
+        jPanel1.add(r14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 400, 91, -1));
 
         r15.setText("/*.............*/");
         r15.setContentAreaFilled(false);
@@ -219,6 +244,7 @@ public class python_questions extends javax.swing.JFrame {
                 r15ActionPerformed(evt);
             }
         });
+        jPanel1.add(r15, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, -1, -1));
 
         r18.setText("\\n hello");
         r18.setContentAreaFilled(false);
@@ -227,6 +253,7 @@ public class python_questions extends javax.swing.JFrame {
                 r18ActionPerformed(evt);
             }
         });
+        jPanel1.add(r18, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 471, 86, -1));
 
         r19.setText("the letter r & then hello");
         r19.setContentAreaFilled(false);
@@ -235,6 +262,7 @@ public class python_questions extends javax.swing.JFrame {
                 r19ActionPerformed(evt);
             }
         });
+        jPanel1.add(r19, new org.netbeans.lib.awtextra.AbsoluteConstraints(251, 471, -1, -1));
 
         r16.setText("#");
         r16.setContentAreaFilled(false);
@@ -243,6 +271,7 @@ public class python_questions extends javax.swing.JFrame {
                 r16ActionPerformed(evt);
             }
         });
+        jPanel1.add(r16, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 88, -1));
 
         r20.setText("Error");
         r20.setContentAreaFilled(false);
@@ -251,6 +280,7 @@ public class python_questions extends javax.swing.JFrame {
                 r20ActionPerformed(evt);
             }
         });
+        jPanel1.add(r20, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 470, 70, -1));
 
         r10.setText("Output Binary");
         r10.setContentAreaFilled(false);
@@ -259,6 +289,7 @@ public class python_questions extends javax.swing.JFrame {
                 r10ActionPerformed(evt);
             }
         });
+        jPanel1.add(r10, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 325, 110, -1));
 
         r11.setText("Dump");
         r11.setContentAreaFilled(false);
@@ -267,6 +298,7 @@ public class python_questions extends javax.swing.JFrame {
                 r11ActionPerformed(evt);
             }
         });
+        jPanel1.add(r11, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 325, 110, -1));
 
         r12.setText("Binary.output");
         r12.setContentAreaFilled(false);
@@ -275,6 +307,7 @@ public class python_questions extends javax.swing.JFrame {
                 r12ActionPerformed(evt);
             }
         });
+        jPanel1.add(r12, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 325, 110, -1));
 
         jButton5.setText("SUBMIT");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -282,146 +315,15 @@ public class python_questions extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 520, 108, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setText("Q 5) What is the output when following code is executed ?     print r\"\\nhello\" The output is");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 439, 709, 25));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22)
-                .addComponent(ttt, javax.swing.GroupLayout.PREFERRED_SIZE, 556, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, Short.MAX_VALUE)
-                .addComponent(minimize, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(CANCEL, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(r1)
-                                .addGap(18, 18, 18)
-                                .addComponent(r2)
-                                .addGap(18, 18, 18)
-                                .addComponent(r3)
-                                .addGap(18, 18, 18)
-                                .addComponent(r4))
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(r5)
-                                .addGap(18, 18, 18)
-                                .addComponent(r6)
-                                .addGap(26, 26, 26)
-                                .addComponent(r7)
-                                .addGap(30, 30, 30)
-                                .addComponent(r8, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(r9, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(36, 36, 36)
-                                .addComponent(r10, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(31, 31, 31)
-                                .addComponent(r11, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(31, 31, 31)
-                                .addComponent(r12, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(r13, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(36, 36, 36)
-                                .addComponent(r14, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(19, 19, 19)
-                                .addComponent(r15)
-                                .addGap(23, 23, 23)
-                                .addComponent(r16, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(r17)
-                                .addGap(18, 18, 18)
-                                .addComponent(r18, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(r19)
-                                .addGap(32, 32, 32)
-                                .addComponent(r20, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(329, 329, 329)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(10, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(11, 11, 11)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ttt, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(CANCEL)
-                    .addComponent(minimize))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(r1)
-                    .addComponent(r2)
-                    .addComponent(r3)
-                    .addComponent(r4))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(r5)
-                    .addComponent(r6)
-                    .addComponent(r7)
-                    .addComponent(r8))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(r9)
-                    .addComponent(r10)
-                    .addComponent(r11)
-                    .addComponent(r12))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(r13)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(r14)
-                            .addComponent(r15)
-                            .addComponent(r16))))
-                .addGap(15, 15, 15)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(r20)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(r17)
-                            .addComponent(r18)
-                            .addComponent(r19))))
-                .addGap(27, 27, 27)
-                .addComponent(jButton5)
-                .addContainerGap())
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/14.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -6, 830, 560));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -682,6 +584,7 @@ public class python_questions extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
