@@ -5,8 +5,11 @@
  */
 package offline.examination;
 
+import java.awt.Frame;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class lang_selection extends javax.swing.JFrame {
@@ -167,9 +170,14 @@ public class lang_selection extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     String s,s1,s3;
+    
     private void CANCELActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CANCELActionPerformed
-        System.exit(0);
-        dispose();
+        int a = JOptionPane.showConfirmDialog(this, "ARE YOU SURE, YOU WANT TO EXIT?");
+        if(a == JOptionPane.YES_OPTION){
+            System.exit(0);
+            dispose();
+        }
+        
     }//GEN-LAST:event_CANCELActionPerformed
 
     private void minimizeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minimizeActionPerformed
@@ -242,7 +250,8 @@ public class lang_selection extends javax.swing.JFrame {
         else
         {
             try{
-                JOptionPane.showMessageDialog(null, "**Choose One Option**");
+                ImageIcon icon = new ImageIcon("E:\\Netbeans project new\\Offline-Examination\\src\\offline\\examination\\Danger.png");
+                JOptionPane.showMessageDialog(this,"**CHOOSE ONE OPTION**","Offline-Examination",JOptionPane.WARNING_MESSAGE, icon);
 
             }
             catch(Exception e){}
