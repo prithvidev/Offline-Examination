@@ -24,17 +24,17 @@ public class Results extends javax.swing.JFrame {
         if(Integer.parseInt(sq)==5)
         {
       s="Your Result is:"+sq+" \n";
-      t1.setText(s+"HURAAAYYYY FULL NUMBER\n"+"YOU ARE ELIGIBLE TO GET A SCHOLARSHIP");
+      t2.setText(s+"HURAAAYYYY FULL NUMBER\n"+"YOU ARE ELIGIBLE TO GET A SCHOLARSHIP");
         }
         else if(Integer.parseInt(sq)>=3)
         {
       s="Your Result is:"+sq+" \n";
-      t1.setText(s+"\n"+"YOU ARE ELIGIBLE TO GET A SCHOLARSHIP");
+      t2.setText(s+"\n"+"YOU ARE ELIGIBLE TO GET A SCHOLARSHIP");
         }
         else
         {
         s="Your Result is:"+sq+" \n";
-        t1.setText(s+"\nYOU NEED TO DO HARDWORK BUDDY");
+        t2.setText(s+"\nYOU NEED TO DO HARDWORK BUDDY");
         }
    }
     /**
@@ -51,9 +51,9 @@ public class Results extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         minimize = new javax.swing.JButton();
         CANCEL = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        t2 = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        t2 = new javax.swing.JTextArea();
 
         t1.setEditable(false);
         t1.setColumns(20);
@@ -86,13 +86,6 @@ public class Results extends javax.swing.JFrame {
             }
         });
 
-        t2.setEditable(false);
-        t2.setColumns(20);
-        t2.setFont(new java.awt.Font("Monospaced", 2, 18)); // NOI18N
-        t2.setForeground(new java.awt.Color(153, 0, 0));
-        t2.setRows(5);
-        jScrollPane2.setViewportView(t2);
-
         jButton1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jButton1.setText("PRINT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -101,25 +94,29 @@ public class Results extends javax.swing.JFrame {
             }
         });
 
+        t2.setColumns(20);
+        t2.setRows(5);
+        jScrollPane3.setViewportView(t2);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(44, Short.MAX_VALUE)
+                .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(192, 192, 192))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 434, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 446, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(89, 89, 89)
                                 .addComponent(minimize, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(1, 1, 1)
-                        .addComponent(CANCEL, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(192, 192, 192))))
+                        .addComponent(CANCEL, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,9 +127,9 @@ public class Results extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(42, 42, 42)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jButton1)
                 .addGap(28, 28, 28))
         );
@@ -197,7 +194,7 @@ public class Results extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JButton minimize;
     private javax.swing.JTextArea t1;
     private javax.swing.JTextArea t2;

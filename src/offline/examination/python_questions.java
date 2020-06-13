@@ -12,7 +12,7 @@ package offline.examination;
 public class python_questions extends javax.swing.JFrame {
 
     String s;
-    
+    int count = 0;
     public python_questions() {
         initComponents();
     }
@@ -39,6 +39,32 @@ public class python_questions extends javax.swing.JFrame {
         ttt = new javax.swing.JLabel();
         minimize = new javax.swing.JButton();
         CANCEL = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        r1 = new javax.swing.JRadioButton();
+        r2 = new javax.swing.JRadioButton();
+        r3 = new javax.swing.JRadioButton();
+        r4 = new javax.swing.JRadioButton();
+        jLabel7 = new javax.swing.JLabel();
+        r5 = new javax.swing.JRadioButton();
+        r6 = new javax.swing.JRadioButton();
+        r7 = new javax.swing.JRadioButton();
+        r8 = new javax.swing.JRadioButton();
+        jLabel8 = new javax.swing.JLabel();
+        r9 = new javax.swing.JRadioButton();
+        jLabel9 = new javax.swing.JLabel();
+        r13 = new javax.swing.JRadioButton();
+        r17 = new javax.swing.JRadioButton();
+        r14 = new javax.swing.JRadioButton();
+        r15 = new javax.swing.JRadioButton();
+        r18 = new javax.swing.JRadioButton();
+        r19 = new javax.swing.JRadioButton();
+        r16 = new javax.swing.JRadioButton();
+        r20 = new javax.swing.JRadioButton();
+        r10 = new javax.swing.JRadioButton();
+        r11 = new javax.swing.JRadioButton();
+        r12 = new javax.swing.JRadioButton();
+        jButton5 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -78,6 +104,188 @@ public class python_questions extends javax.swing.JFrame {
             }
         });
 
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel6.setText("Q 1) Suppose we have a set a = {10,9,8,7}, and we execute a.remove(14) what will happen ?");
+
+        r1.setText("We cannot remove an element");
+        r1.setContentAreaFilled(false);
+        r1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r1ActionPerformed(evt);
+            }
+        });
+
+        r2.setText("Method is executed but no exception is raised ");
+        r2.setContentAreaFilled(false);
+        r2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r2ActionPerformed(evt);
+            }
+        });
+
+        r3.setText("Key error is raised");
+        r3.setContentAreaFilled(false);
+        r3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r3ActionPerformed(evt);
+            }
+        });
+
+        r4.setText("There doesn't exist such method remove");
+        r4.setContentAreaFilled(false);
+        r4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r4ActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel7.setText("Q 2) Pylab is a package that combine _______,________&______ into a single namespace");
+
+        r5.setText("Numpy, scipy & matplotlib");
+        r5.setContentAreaFilled(false);
+        r5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r5ActionPerformed(evt);
+            }
+        });
+
+        r6.setText("Numpy, matplotlib & pandas");
+        r6.setContentAreaFilled(false);
+        r6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r6ActionPerformed(evt);
+            }
+        });
+
+        r7.setText("Numpy, pandas & matplotlib");
+        r7.setContentAreaFilled(false);
+        r7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r7ActionPerformed(evt);
+            }
+        });
+
+        r8.setText("Numpy, scipy  & pandas");
+        r8.setContentAreaFilled(false);
+        r8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r8ActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel8.setText("Q 3) Select the correct function among them which can be used to write the data to perform for a binary output?");
+
+        r9.setText("Write");
+        r9.setContentAreaFilled(false);
+        r9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r9ActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel9.setText("Q 4) Which is the special symbol used in python to add comments?");
+
+        r13.setText("$");
+        r13.setContentAreaFilled(false);
+        r13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r13ActionPerformed(evt);
+            }
+        });
+
+        r17.setText("a new line and hello");
+        r17.setContentAreaFilled(false);
+        r17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r17ActionPerformed(evt);
+            }
+        });
+
+        r14.setText("//");
+        r14.setContentAreaFilled(false);
+        r14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r14ActionPerformed(evt);
+            }
+        });
+
+        r15.setText("/*.............*/");
+        r15.setContentAreaFilled(false);
+        r15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r15ActionPerformed(evt);
+            }
+        });
+
+        r18.setText("\\n hello");
+        r18.setContentAreaFilled(false);
+        r18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r18ActionPerformed(evt);
+            }
+        });
+
+        r19.setText("the letter r & then hello");
+        r19.setContentAreaFilled(false);
+        r19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r19ActionPerformed(evt);
+            }
+        });
+
+        r16.setText("#");
+        r16.setContentAreaFilled(false);
+        r16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r16ActionPerformed(evt);
+            }
+        });
+
+        r20.setText("Error");
+        r20.setContentAreaFilled(false);
+        r20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r20ActionPerformed(evt);
+            }
+        });
+
+        r10.setText("Output Binary");
+        r10.setContentAreaFilled(false);
+        r10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r10ActionPerformed(evt);
+            }
+        });
+
+        r11.setText("Dump");
+        r11.setContentAreaFilled(false);
+        r11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r11ActionPerformed(evt);
+            }
+        });
+
+        r12.setText("Binary.output");
+        r12.setContentAreaFilled(false);
+        r12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r12ActionPerformed(evt);
+            }
+        });
+
+        jButton5.setText("SUBMIT");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel5.setText("Q 5) What is the output when following code is executed ?     print r\"\\nhello\" The output is");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -94,6 +302,60 @@ public class python_questions extends javax.swing.JFrame {
                 .addComponent(minimize, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(CANCEL, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(r1)
+                                .addGap(18, 18, 18)
+                                .addComponent(r2)
+                                .addGap(18, 18, 18)
+                                .addComponent(r3)
+                                .addGap(18, 18, 18)
+                                .addComponent(r4))
+                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(r5)
+                                .addGap(18, 18, 18)
+                                .addComponent(r6)
+                                .addGap(26, 26, 26)
+                                .addComponent(r7)
+                                .addGap(30, 30, 30)
+                                .addComponent(r8, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(r9, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(36, 36, 36)
+                                .addComponent(r10, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(31, 31, 31)
+                                .addComponent(r11, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(31, 31, 31)
+                                .addComponent(r12, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(r13, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(36, 36, 36)
+                                .addComponent(r14, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19)
+                                .addComponent(r15)
+                                .addGap(23, 23, 23)
+                                .addComponent(r16, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(r17)
+                                .addGap(18, 18, 18)
+                                .addComponent(r18, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(r19)
+                                .addGap(32, 32, 32)
+                                .addComponent(r20, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(329, 329, 329)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -110,7 +372,55 @@ public class python_questions extends javax.swing.JFrame {
                             .addComponent(ttt, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(CANCEL)
                     .addComponent(minimize))
-                .addGap(0, 441, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(7, 7, 7)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(r1)
+                    .addComponent(r2)
+                    .addComponent(r3)
+                    .addComponent(r4))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(7, 7, 7)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(r5)
+                    .addComponent(r6)
+                    .addComponent(r7)
+                    .addComponent(r8))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(7, 7, 7)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(r9)
+                    .addComponent(r10)
+                    .addComponent(r11)
+                    .addComponent(r12))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(7, 7, 7)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(r13)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(r14)
+                            .addComponent(r15)
+                            .addComponent(r16))))
+                .addGap(15, 15, 15)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(r20)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(r17)
+                            .addComponent(r18)
+                            .addComponent(r19))))
+                .addGap(27, 27, 27)
+                .addComponent(jButton5)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -143,6 +453,193 @@ public class python_questions extends javax.swing.JFrame {
         System.exit(0);
         dispose();
     }//GEN-LAST:event_CANCELActionPerformed
+
+    private void r1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r1ActionPerformed
+        if(r1.isSelected())
+        {
+            r2.setSelected(false);
+            r3.setSelected(false);
+            r4.setSelected(false);
+        }
+    }//GEN-LAST:event_r1ActionPerformed
+
+    private void r2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r2ActionPerformed
+        if(r2.isSelected())
+        {
+            r1.setSelected(false);
+            r3.setSelected(false);
+            r4.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r2ActionPerformed
+
+    private void r3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r3ActionPerformed
+        if(r3.isSelected())
+        {count=count+1;
+            r2.setSelected(false);
+            r1.setSelected(false);
+            r4.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r3ActionPerformed
+
+    private void r4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r4ActionPerformed
+        if(r4.isSelected())
+        {
+            r2.setSelected(false);
+            r3.setSelected(false);
+            r1.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r4ActionPerformed
+
+    private void r5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r5ActionPerformed
+        if(r5.isSelected())
+        {count=count+1;
+            r6.setSelected(false);
+            r7.setSelected(false);
+            r8.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r5ActionPerformed
+
+    private void r6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r6ActionPerformed
+        if(r6.isSelected())
+        {
+            r5.setSelected(false);
+            r7.setSelected(false);
+            r8.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r6ActionPerformed
+
+    private void r7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r7ActionPerformed
+        if(r7.isSelected())
+        {
+            r5.setSelected(false);
+            r7.setSelected(false);
+            r8.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r7ActionPerformed
+
+    private void r8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r8ActionPerformed
+        if(r8.isSelected())
+        {
+            r6.setSelected(false);
+            r7.setSelected(false);
+            r5.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r8ActionPerformed
+
+    private void r9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r9ActionPerformed
+        if(r9.isSelected())
+        {
+            r10.setSelected(false);
+            r11.setSelected(false);
+            r12.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r9ActionPerformed
+
+    private void r13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r13ActionPerformed
+        if(r13.isSelected())
+        {
+            r14.setSelected(false);
+            r15.setSelected(false);
+            r16.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r13ActionPerformed
+
+    private void r17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r17ActionPerformed
+        if(r17.isSelected())
+        {
+            r18.setSelected(false);
+            r19.setSelected(false);
+            r20.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r17ActionPerformed
+
+    private void r14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r14ActionPerformed
+        if(r14.isSelected())
+        {
+            r13.setSelected(false);
+            r15.setSelected(false);
+            r16.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r14ActionPerformed
+
+    private void r15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r15ActionPerformed
+        if(r15.isSelected())
+        {
+            r14.setSelected(false);
+            r13.setSelected(false);
+            r16.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r15ActionPerformed
+
+    private void r18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r18ActionPerformed
+        if(r18.isSelected())
+        {count=count+1;
+            r17.setSelected(false);
+            r19.setSelected(false);
+            r20.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r18ActionPerformed
+
+    private void r19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r19ActionPerformed
+        if(r19.isSelected())
+        {
+            r18.setSelected(false);
+            r17.setSelected(false);
+            r20.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r19ActionPerformed
+
+    private void r16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r16ActionPerformed
+        if(r16.isSelected())
+        {count=count+1;
+            r14.setSelected(false);
+            r15.setSelected(false);
+            r13.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r16ActionPerformed
+
+    private void r20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r20ActionPerformed
+        if(r20.isSelected())
+        {
+            r18.setSelected(false);
+            r19.setSelected(false);
+            r17.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r20ActionPerformed
+
+    private void r10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r10ActionPerformed
+        if(r10.isSelected())
+        {
+            r11.setSelected(false);
+            r12.setSelected(false);
+            r9.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r10ActionPerformed
+
+    private void r11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r11ActionPerformed
+        if(r11.isSelected())
+        {count=count+1;
+            r10.setSelected(false);
+            r12.setSelected(false);
+            r9.setSelected(false);
+        }  // TODO add your handling code here:
+    }//GEN-LAST:event_r11ActionPerformed
+
+    private void r12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r12ActionPerformed
+        if(r12.isSelected())
+        {
+            r11.setSelected(false);
+            r10.setSelected(false);
+            r9.setSelected(false);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_r12ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        String sa=Integer.toString(count);
+        Results obj3=new Results(sa);
+        this.setVisible(false);
+        obj3.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -182,10 +679,36 @@ public class python_questions extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton CANCEL;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton minimize;
+    private javax.swing.JRadioButton r1;
+    private javax.swing.JRadioButton r10;
+    private javax.swing.JRadioButton r11;
+    private javax.swing.JRadioButton r12;
+    private javax.swing.JRadioButton r13;
+    private javax.swing.JRadioButton r14;
+    private javax.swing.JRadioButton r15;
+    private javax.swing.JRadioButton r16;
+    private javax.swing.JRadioButton r17;
+    private javax.swing.JRadioButton r18;
+    private javax.swing.JRadioButton r19;
+    private javax.swing.JRadioButton r2;
+    private javax.swing.JRadioButton r20;
+    private javax.swing.JRadioButton r3;
+    private javax.swing.JRadioButton r4;
+    private javax.swing.JRadioButton r5;
+    private javax.swing.JRadioButton r6;
+    private javax.swing.JRadioButton r7;
+    private javax.swing.JRadioButton r8;
+    private javax.swing.JRadioButton r9;
     private javax.swing.JLabel ttt;
     // End of variables declaration//GEN-END:variables
 }
