@@ -62,6 +62,7 @@ public class CplusQuestions extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         ttt.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         ttt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -345,8 +346,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(minimize, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 0, 0)
-                .addComponent(CANCEL, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
+                .addComponent(CANCEL, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(306, 306, 306)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)

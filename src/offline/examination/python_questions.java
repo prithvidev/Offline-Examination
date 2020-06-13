@@ -41,6 +41,7 @@ public class python_questions extends javax.swing.JFrame {
         CANCEL = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/icons8-python-96.png"))); // NOI18N
         jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
