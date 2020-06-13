@@ -28,8 +28,8 @@ public class lang_selection extends javax.swing.JFrame {
                     int sec = cal.get(Calendar.SECOND);
                     int AMPM = cal.get(Calendar.AM_PM);
                     String dn = "";
-                    if(AMPM == 1){dn ="PM";}
-                    else{dn = "AM";}
+                    if(AMPM == 0){dn ="AM";}
+                    else{dn = "PM";}
                     String time = hour+":"+min+":"+sec+" "+dn;
                     int day = cal.get(Calendar.DAY_OF_MONTH);
                     int mon = cal.get(Calendar.MONTH);
@@ -127,15 +127,16 @@ public class lang_selection extends javax.swing.JFrame {
         });
         jPanel1.add(r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 209, -1, 45));
 
-        jButton3.setBackground(new java.awt.Color(0, 204, 204));
         jButton3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jButton3.setText("Submit");
+        jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton3.setContentAreaFilled(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, -1, 60));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 110, 40));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
