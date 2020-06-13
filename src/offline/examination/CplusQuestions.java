@@ -60,16 +60,21 @@ public class CplusQuestions extends javax.swing.JFrame {
         r19 = new javax.swing.JRadioButton();
         r20 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         ttt.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         ttt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ttt.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(ttt, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 11, 556, 88));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/icons8-c++-100.png"))); // NOI18N
         jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 100, 88));
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/Go back.png"))); // NOI18N
         jButton4.setContentAreaFilled(false);
@@ -78,10 +83,12 @@ public class CplusQuestions extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 11, 30, 30));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("HOME");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 41, 30, -1));
 
         minimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/minimize.png"))); // NOI18N
         minimize.setContentAreaFilled(false);
@@ -90,6 +97,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 minimizeActionPerformed(evt);
             }
         });
+        jPanel1.add(minimize, new org.netbeans.lib.awtextra.AbsoluteConstraints(714, 0, 27, -1));
 
         CANCEL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/exit.png"))); // NOI18N
         CANCEL.setContentAreaFilled(false);
@@ -98,9 +106,11 @@ public class CplusQuestions extends javax.swing.JFrame {
                 CANCELActionPerformed(evt);
             }
         });
+        jPanel1.add(CANCEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(741, 0, 27, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setText("Q1)Which of the following type of class allows only one object of it to be created?");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 117, 717, 25));
 
         r1.setText("Virtual Class");
         r1.setContentAreaFilled(false);
@@ -109,6 +119,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r1ActionPerformed(evt);
             }
         });
+        jPanel1.add(r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 149, -1, -1));
 
         r2.setText("Abstract Class");
         r2.setContentAreaFilled(false);
@@ -117,6 +128,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r2ActionPerformed(evt);
             }
         });
+        jPanel1.add(r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 149, -1, -1));
 
         r3.setText("Singleton Class");
         r3.setContentAreaFilled(false);
@@ -125,6 +137,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r3ActionPerformed(evt);
             }
         });
+        jPanel1.add(r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 149, -1, -1));
 
         r4.setText("Friend Class");
         r4.setContentAreaFilled(false);
@@ -133,9 +146,11 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r4ActionPerformed(evt);
             }
         });
+        jPanel1.add(r4, new org.netbeans.lib.awtextra.AbsoluteConstraints(533, 149, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel6.setText("Q2)Which of the following is not a type of constructor?");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 190, 717, 25));
 
         r5.setText("Copy Constructor");
         r5.setContentAreaFilled(false);
@@ -144,6 +159,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r5ActionPerformed(evt);
             }
         });
+        jPanel1.add(r5, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 222, -1, -1));
 
         r6.setText("Friend Constructor");
         r6.setContentAreaFilled(false);
@@ -152,6 +168,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r6ActionPerformed(evt);
             }
         });
+        jPanel1.add(r6, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 222, -1, -1));
 
         r7.setText("Default Constructor");
         r7.setContentAreaFilled(false);
@@ -160,6 +177,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r7ActionPerformed(evt);
             }
         });
+        jPanel1.add(r7, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 222, -1, -1));
 
         r8.setText("Parameterised Constructor");
         r8.setContentAreaFilled(false);
@@ -168,9 +186,11 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r8ActionPerformed(evt);
             }
         });
+        jPanel1.add(r8, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 222, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel8.setText("Q3)Which of the following is not the member of Class?");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 263, 713, 25));
 
         r9.setText("Static Function");
         r9.setContentAreaFilled(false);
@@ -179,6 +199,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r9ActionPerformed(evt);
             }
         });
+        jPanel1.add(r9, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 295, -1, -1));
 
         r10.setText("Friend Function");
         r10.setContentAreaFilled(false);
@@ -187,6 +208,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r10ActionPerformed(evt);
             }
         });
+        jPanel1.add(r10, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 295, -1, -1));
 
         r11.setText("Constant Function");
         r11.setContentAreaFilled(false);
@@ -195,6 +217,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r11ActionPerformed(evt);
             }
         });
+        jPanel1.add(r11, new org.netbeans.lib.awtextra.AbsoluteConstraints(385, 295, -1, -1));
 
         r12.setText("Virtual Function");
         r12.setContentAreaFilled(false);
@@ -203,9 +226,11 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r12ActionPerformed(evt);
             }
         });
+        jPanel1.add(r12, new org.netbeans.lib.awtextra.AbsoluteConstraints(537, 295, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel7.setText("Q4)Which of the following concepts means determining at runtime what method to invoke?");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 336, 717, 25));
 
         r13.setText("Data Hiding");
         r13.setContentAreaFilled(false);
@@ -214,6 +239,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r13ActionPerformed(evt);
             }
         });
+        jPanel1.add(r13, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 368, -1, -1));
 
         r14.setText("Dynamic Typing");
         r14.setContentAreaFilled(false);
@@ -222,6 +248,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r14ActionPerformed(evt);
             }
         });
+        jPanel1.add(r14, new org.netbeans.lib.awtextra.AbsoluteConstraints(205, 368, -1, -1));
 
         r15.setText("Dynamic Binding");
         r15.setContentAreaFilled(false);
@@ -230,6 +257,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r15ActionPerformed(evt);
             }
         });
+        jPanel1.add(r15, new org.netbeans.lib.awtextra.AbsoluteConstraints(389, 368, -1, -1));
 
         r16.setText("Dynamic Loading");
         r16.setContentAreaFilled(false);
@@ -238,9 +266,11 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r16ActionPerformed(evt);
             }
         });
+        jPanel1.add(r16, new org.netbeans.lib.awtextra.AbsoluteConstraints(542, 368, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel9.setText("Q5)How Many Instances of an abstract class can be created?");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 409, 717, 25));
 
         r17.setText("One");
         r17.setContentAreaFilled(false);
@@ -249,6 +279,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r17ActionPerformed(evt);
             }
         });
+        jPanel1.add(r17, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 441, -1, -1));
 
         r18.setText("Thirteen");
         r18.setContentAreaFilled(false);
@@ -257,6 +288,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r18ActionPerformed(evt);
             }
         });
+        jPanel1.add(r18, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 441, -1, -1));
 
         r19.setText("Five");
         r19.setContentAreaFilled(false);
@@ -265,6 +297,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r19ActionPerformed(evt);
             }
         });
+        jPanel1.add(r19, new org.netbeans.lib.awtextra.AbsoluteConstraints(398, 441, -1, -1));
 
         r20.setText("Zero");
         r20.setContentAreaFilled(false);
@@ -273,6 +306,7 @@ public class CplusQuestions extends javax.swing.JFrame {
                 r20ActionPerformed(evt);
             }
         });
+        jPanel1.add(r20, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 441, -1, -1));
 
         jButton1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jButton1.setText("SUBMIT");
@@ -281,137 +315,11 @@ public class CplusQuestions extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 493, 107, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 717, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(r1)
-                            .addGap(96, 96, 96)
-                            .addComponent(r2)
-                            .addGap(81, 81, 81)
-                            .addComponent(r3)
-                            .addGap(57, 57, 57)
-                            .addComponent(r4))
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 717, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(r5)
-                            .addGap(66, 66, 66)
-                            .addComponent(r6)
-                            .addGap(66, 66, 66)
-                            .addComponent(r7)
-                            .addGap(32, 32, 32)
-                            .addComponent(r8))
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 713, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(r9)
-                            .addGap(81, 81, 81)
-                            .addComponent(r10)
-                            .addGap(84, 84, 84)
-                            .addComponent(r11)
-                            .addGap(39, 39, 39)
-                            .addComponent(r12))
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 717, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(r13)
-                            .addGap(100, 100, 100)
-                            .addComponent(r14)
-                            .addGap(83, 83, 83)
-                            .addComponent(r15)
-                            .addGap(50, 50, 50)
-                            .addComponent(r16))
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 717, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(r17)
-                            .addGap(138, 138, 138)
-                            .addComponent(r18)
-                            .addGap(126, 126, 126)
-                            .addComponent(r19)
-                            .addGap(107, 107, 107)
-                            .addComponent(r20)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ttt, javax.swing.GroupLayout.PREFERRED_SIZE, 556, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(minimize, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, 0)
-                .addComponent(CANCEL, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(306, 306, 306)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, 0)
-                                .addComponent(jLabel1))
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(ttt, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(CANCEL)
-                    .addComponent(minimize))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(r1)
-                    .addComponent(r2)
-                    .addComponent(r3)
-                    .addComponent(r4))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(r5)
-                    .addComponent(r6)
-                    .addComponent(r7)
-                    .addComponent(r8))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(r9)
-                    .addComponent(r10)
-                    .addComponent(r11)
-                    .addComponent(r12))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(r13)
-                    .addComponent(r14)
-                    .addComponent(r15)
-                    .addComponent(r16))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(r17)
-                    .addComponent(r18)
-                    .addComponent(r19)
-                    .addComponent(r20))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(19, 19, 19))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/offline/examination/14.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 540));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -672,6 +580,7 @@ public class CplusQuestions extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
