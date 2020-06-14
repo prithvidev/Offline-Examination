@@ -125,7 +125,7 @@ public class Results extends javax.swing.JFrame {
         try {
             t1.print();        // TODO add your handling code here:
         } catch (PrinterException ex) {
-            Logger.getLogger(Results.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("OKH BYEEE");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
