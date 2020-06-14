@@ -94,6 +94,12 @@ public class registration extends javax.swing.JFrame {
         jLabel3.setText("NAME");
         jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 148, 50, 24));
+
+        a.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                aKeyPressed(evt);
+            }
+        });
         getContentPane().add(a, new org.netbeans.lib.awtextra.AbsoluteConstraints(144, 150, 175, 24));
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -148,7 +154,7 @@ public class registration extends javax.swing.JFrame {
     }//GEN-LAST:event_CANCELActionPerformed
 
     private void phnKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_phnKeyPressed
-        String p = phn.getText();
+       String p = phn.getText();
        char c = evt.getKeyChar();
        
        if(evt.getKeyChar() >= '0' || evt.getKeyChar()<='9'){
@@ -157,7 +163,8 @@ public class registration extends javax.swing.JFrame {
            }else{phn.setEditable(false);}
        }
        else{
-           if(evt.getExtendedKeyCode()==KeyEvent.VK_BACK_SPACE  || evt.getExtendedKeyCode()==KeyEvent.VK_DELETE){
+           if(evt.getExtendedKeyCode()==KeyEvent.VK_BACK_SPACE  || evt.getExtendedKeyCode()==KeyEvent.VK_DELETE)
+           {
                phn.setEditable(true);
            }
            else{phn.setEditable(false);}
@@ -186,6 +193,16 @@ this.setVisible(false);
 obj3.setVisible(true);
 }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void aKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_aKeyPressed
+        char c = evt.getKeyChar();
+        if(Character.isLetter(c) || Character.isWhitespace(c) || Character.isISOControl(c)){
+            a.setEditable(true);
+        }
+        else{
+            a.setEditable(false);
+        }
+    }//GEN-LAST:event_aKeyPressed
 
     /**
      * @param args the command line arguments
